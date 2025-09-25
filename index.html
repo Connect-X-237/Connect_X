@@ -11,6 +11,38 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="drawer" id="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="drawer-header">
+        <div class="brand-row">
+          <img src="logo.jpg" alt="CONNECT X Logo" class="footer-logo">
+          <span class="brand-name title-audiowide">CONNECT X</span>
+        </div>
+        <button class="drawer-close" aria-label="Close menu">&#10005;</button>
+      </div>
+      <nav class="drawer-nav" aria-label="Mobile">
+        <ul class="drawer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#vision">Vision</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#meet-us">Meet Us</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li class="drawer-section">Committees</li>
+          <li class="drawer-sub"><a href="#committees">AI</a></li>
+          <li class="drawer-sub"><a href="#committees">Flutter</a></li>
+          <li class="drawer-sub"><a href="#committees">Web</a></li>
+          <li class="drawer-sub"><a href="#committees">Software Testing</a></li>
+          <li class="drawer-sub"><a href="#committees">HR</a></li>
+          <li class="drawer-sub"><a href="#committees">Operations</a></li>
+          <li class="drawer-sub"><a href="#committees">PR</a></li>
+          <li class="drawer-sub"><a href="#committees">UI/UX</a></li>
+          <li class="drawer-sub"><a href="#committees">Media</a></li>
+          <li class="drawer-sub"><a href="#committees">Content Creation</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay" tabindex="-1" aria-hidden="true"></div>
     <header class="site-header">
       <div class="container header-inner">
         <a href="#home" class="brand">
@@ -222,8 +254,8 @@
           <div class="brand-row">
             <img src="logo.jpg" alt="CONNECT X Logo" class="footer-logo">
             <span class="brand-name title-audiowide">CONNECT X</span>
+            <span class="copyright-inline">© 2025 CONNECT X. All rights reserved.</span>
           </div>
-          <div class="copyright">&copy; <span id="year"></span> CONNECT X. All rights reserved.</div>
         </div>
         <nav class="social" aria-label="Social media">
           <div class="footer-title">Follow</div>
@@ -258,6 +290,27 @@
                 <li>UI/UX</li>
                 <li>Media</li>
                 <li>Content Creation</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Mobile-only two-column layout with specific ordering -->
+          <div class="committees-columns-mobile" aria-hidden="true">
+            <div class="footer-col">
+              <ul>
+                <li>AI</li>
+                <li>Flutter</li>
+                <li>Web</li>
+                <li>App Testing</li>
+                <li>UI/UX</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <ul>
+                <li>Media</li>
+                <li>Content Creation</li>
+                <li>HR</li>
+                <li>PR</li>
+                <li>Operations</li>
               </ul>
             </div>
           </div>
