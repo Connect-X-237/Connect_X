@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CONNECT X — Connecting the Dots</title>
+    <meta name="description" content="CONNECT X — Student activity organization connecting Web, Flutter, and AI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="brand">
+          <img src="logo.jpg" alt="CONNECT X Logo" class="brand-logo">
+          <span class="brand-name">CONNECT X</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#meet-us">Meet Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li class="has-dropdown"><a href="#committees">Committees</a>
+              <div class="mega" role="menu" aria-label="Committees">
+                <div class="mega-col">
+                  <div class="mega-title">Technical</div>
+                  <ul>
+                    <li><a href="#committees">AI</a></li>
+                    <li><a href="#committees">Flutter</a></li>
+                    <li><a href="#committees">Web</a></li>
+                    <li><a href="#committees">Software Testing</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <div class="mega-title">Organizing</div>
+                  <ul>
+                    <li><a href="#committees">HR</a></li>
+                    <li><a href="#committees">Operations</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <div class="mega-title">Creative</div>
+                  <ul>
+                    <li><a href="#committees">PR</a></li>
+                    <li><a href="#committees">UI/UX</a></li>
+                    <li><a href="#committees">Media</a></li>
+                    <li><a href="#committees">Content Creation</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-cta">
+          <a href="#join" class="btn btn-primary">Join Us</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <h1 id="hero-title" class="title-audiowide">CONNECT X</h1>
+          <p class="subtitle">Connecting the dots across Web · Flutter · AI</p>
+        </div>
+        <div class="hero-bg"></div>
+      </section>
+
+      <section id="about" class="section about reveal">
+        <div class="container">
+          <h2 class="section-title title-audiowide">About</h2>
+          <p class="about-text">
+            Connect X is a nonprofit student activity based in the Faculty of Computer and Information Sciences
+             at Ain Shams University. Guided by our slogan, “Connecting the Dots”, we strive to bridge the gap
+              between university education and real market needs by equipping students with both knowledge 
+              and hands-on experience. At our core, we are a vibrant community of students passionate about 
+              technology, creativity, and collaboration. Through diverse committees—ranging from AI and Web 
+              to HR, Media, PR, and beyond—we create a dynamic space for learning, experimenting, and building 
+              impactful projects together.
+          </p>
+        
+        </div>
+      </section>
+
+      <section id="vision" class="section variant reveal">
+        <div class="container">
+          <h2 class="section-title title-audiowide">Vision</h2>
+          <p class="about-text">
+            In the next decade, Connect X aspires to become a fully integrated educational academy that empowers students to acquire practical skills. Our long-term goal is to see a startup founded by an ex-ConnectX president or ex-member, leveraging the knowledge, experience, and growth we've gained through our community, and to recruit other members of our family to create more solutions and drive growth.
+          </p>
+        </div>
+      </section>
+
+      <section id="mission" class="section variant reveal">
+        <div class="container">
+          <h2 class="section-title title-audiowide">Mission</h2>
+          <ul class="vm-list">
+            <li>Push boundaries through innovation and collaboration.</li>
+            <li>Build two cross-committee projects to simulate real corporate teamwork.</li>
+            <li>Host a large-scale Connect X Hackathon for students to showcase skills.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section meet-us reveal" id="meet-us" aria-labelledby="meet-us-title">
+        <div class="container">
+          <div class="meet-us-header">
+            <h2 id="meet-us-title" class="section-title-medium">Meet Us</h2>
+          </div>
+          <div class="carousel" data-carousel>
+            <button class="carousel-nav prev" aria-label="Previous" data-prev>
+              <span aria-hidden="true">&#8592;</span>
+            </button>
+            <div class="carousel-viewport" data-viewport>
+              <ul class="carousel-track" data-track>
+                <!-- Example member cards; replace images/names later -->
+                <li class="card">
+                  <img src="meetUs\P.jpg" alt="President" class="card-image">
+                  <div class="card-body">
+                    <div class="card-name">Ahmed Hazem</div>
+                    <div class="card-role">President</div>
+                  </div>
+                </li>
+                <li class="card">
+                  <img src="meetUs/vp.jpg" alt="Vice President" class="card-image">
+                  <div class="card-body">
+                    <div class="card-name">Jana Waleed</div>
+                    <div class="card-role">Vice President</div>
+                  </div>
+                </li>
+                <li class="card">
+                  <img src="meetUs/amk.jpg" alt="Head of UI/UX" class="card-image">
+                  <div class="card-body">
+                    <div class="card-name">Ahmed Mohamed Khalaf</div>
+                    <div class="card-role">Head of UI/UX</div>
+                  </div>
+                </li>
+                <li class="card">
+                  <img src="meetUs/oma.jpg" alt="Head of content creation" class="card-image">
+                  <div class="card-body">
+                    <div class="card-name">Omar Abdelnaby</div>
+                    <div class="card-role">Head of content creation</div>
+                  </div>
+                </li>
+                <li class="card">
+                  <img src="meetUs/business-person-gesturing-white-background-19126378-2422452828 - Copy.jpg" alt="Head of AI" class="card-image">
+                  <div class="card-body">
+                    <div class="card-name">Head of AI</div>
+                    <div class="card-role">Research</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button class="carousel-nav next" aria-label="Next" data-next>
+              <span aria-hidden="true">&#8594;</span>
+            </button>
+          </div>
+          <div class="carousel-progress" aria-hidden="true">
+            <div class="carousel-progress-bar" data-progress></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section placeholder reveal">
+        <div class="container">
+          <h2 class="section-title title-audiowide">Gallery</h2>
+          <p>Coming soon.</p>
+        </div>
+      </section>
+
+      <section id="projects" class="section placeholder reveal">
+        <div class="container">
+          <h2 class="section-title title-audiowide">Projects</h2>
+          <p>Coming soon.</p>
+        </div>
+      </section>
+
+      <section id="committees" class="section committees reveal">
+        <div class="container">
+          <h2 class="section-title title-audiowide">Committees</h2>
+          <div class="committees-layout">
+            <div class="comm-col">
+              <div class="group-head">Technical</div>
+              <div class="nodes">
+                <div class="node">AI</div>
+                <div class="node">Flutter</div>
+                <div class="node">Web</div>
+                <div class="node">App Testing</div>
+              </div>
+            </div>
+            <div class="comm-col">
+              <div class="group-head">Creative</div>
+              <div class="nodes">
+                <div class="node">PR</div>
+                <div class="node">UI/UX</div>
+                <div class="node">Media</div>
+                <div class="node">Content Creation</div>
+              </div>
+            </div>
+          </div>
+          <div class="connectors" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section id="join" class="section placeholder">
+        <div class="container">
+          <h2 class="section-title title-audiowide">Join Us</h2>
+          <p>We'll add the form and links later.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="brand-row">
+            <img src="logo.jpg" alt="CONNECT X Logo" class="footer-logo">
+            <span class="brand-name title-audiowide">CONNECT X</span>
+          </div>
+          <div class="copyright">&copy; <span id="year"></span> CONNECT X. All rights reserved.</div>
+        </div>
+        <nav class="social" aria-label="Social media">
+          <div class="footer-title">Follow</div>
+          <ul class="footer-links">
+            <li><a href="https://www.linkedin.com/company/connectx23/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/connect__x?igsh=MWZ6bDF2NDQyNGs2cA%3D%3D" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100094206160986&rdid=DfRv4sMvAOgSS4Oh&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15tJsGDq5R%2F" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="mailto:connectx237@gmail.com" rel="noopener">E-mail</a></li>
+            <li><a href="https://www.tiktok.com/@connect__x?_t=ZS-8zpmubaPHOc&_r=1" target="_blank" rel="noopener">TikTok</a></li>
+          </ul>
+        </nav>
+        <div class="footer-committees">
+          <div class="footer-title">Committees</div>
+          <div class="committees-columns">
+            <div class="footer-col">
+              <ul>
+                <li>AI</li>
+                <li>Flutter</li>
+                <li>Web</li>
+                <li>App Testing</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <ul>
+                <li>HR</li>
+                <li>Operations</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <ul>
+                <li>PR</li>
+                <li>UI/UX</li>
+                <li>Media</li>
+                <li>Content Creation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
