@@ -180,6 +180,16 @@ body {
 @media (max-width: 800px) {
   .committees .committees-layout { grid-template-columns: 1fr; }
 }
+
+/* Operations grid under committees */
+.ops-grid { display: grid; grid-template-columns: 1fr; grid-template-rows: auto auto auto; gap: 0 0; grid-auto-flow: row; grid-template-areas: "column1" "column2" "column3"; margin-top: 18px; }
+.ops-grid .column1 { grid-area: column1; display: grid; align-content: start; gap: 10px; }
+.ops-grid .column2 { grid-area: column2; }
+.ops-grid .column3 { grid-area: column3; }
+.ops-grid .group-head { font-family: 'Audiowide', cursive; font-size: 18px; margin-bottom: 10px; color: #ffffff; }
+.ops-grid .nodes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.ops-grid .node { position: relative; background: radial-gradient(120px 120px at 50% 50%, #121216, #09090c); border: 1px solid var(--border); color: var(--text); border-radius: 999px; padding: 16px 18px; text-align: center; box-shadow: inset 0 0 24px rgba(255,255,255,0.04), 0 2px 10px rgba(0,0,0,0.4); }
+@media (max-width: 800px) { .ops-grid { grid-template-columns: 1fr; grid-template-areas: "column1" "column2" "column3"; } .ops-grid .nodes { grid-template-columns: repeat(2, 1fr); } }
 /* removed old footer layout */
 
 /* Responsive */
@@ -194,6 +204,9 @@ body {
   /* Smaller cards on mobile */
   .card { min-width: 170px; max-width: 170px; }
   .carousel-track { gap: 12px; }
+  /* Enable swipe scrolling for Meet Us on mobile */
+  .carousel-viewport { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .carousel-viewport::-webkit-scrollbar { display: none; }
   /* Footer mobile layout per request */
   .footer-inner { grid-template-columns: 1fr; }
   .footer-brand { display: grid; gap: 8px; }
@@ -203,6 +216,12 @@ body {
   .social .footer-links a { display: inline-flex; align-items: center; padding: 8px 12px; border: 1px solid var(--border); border-radius: 999px; background: var(--bg-elev); }
   .footer-committees .committees-columns { display: none; }
   .footer-committees .committees-columns-mobile { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 24px; }
+}
+
+/* Enable swipe scrolling for Meet Us on tablets */
+@media (max-width: 1024px) {
+  .carousel-viewport { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .carousel-viewport::-webkit-scrollbar { display: none; }
 }
 
 
