@@ -206,16 +206,16 @@ body {
 .section.variant { background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.0)); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
 /* Meet Us carousel */
-.meet-us .carousel { position: relative; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; }
+.meet-us .carousel { position: relative; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; padding: 10px;}
 .carousel-viewport { overflow: hidden; }
 .carousel-track { display: flex; gap: 16px; padding: 8px 2px; margin: 0; list-style: none; scroll-behavior: smooth; }
 .card { background: var(--bg-elev); border: 1px solid var(--border); border-radius: 14px; min-width: 220px; max-width: 220px; flex: 0 0 auto; overflow: hidden; }
-.card-image { width: 100%; aspect-ratio: 3 / 4; height: auto; object-fit: cover; display: block; border-bottom: 1px solid var(--border); }
+.card-image { width: 100%; height:max-content; aspect-ratio: 3 / 4; height: auto; object-fit: cover; display: block; border-bottom: 1px solid var(--border); }
 .card-body { padding: 12px 12px 14px; }
 .card-name { font-weight: 700; font-size: 16px; margin-bottom: 6px; }
 .card-role { font-size: 13px; color: #d8d8dd; font-weight: 700; opacity: 0.9; }
 
-.carousel-nav { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--border); background: #000; color: #fff; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.08s ease; }
+.carousel-nav { width: 40px; height: 45px; border-radius: 50%; border: 1px solid var(--border); background: #000; color: #fff; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.08s ease; }
 .carousel-nav:hover { transform: translateY(-1px); }
 .carousel-nav:disabled { opacity: 0.4; cursor: default; }
 
@@ -329,6 +329,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   margin-top: 24px;
+  border-radius: 14px;
 }
 .gallery-card {
   background: var(--bg-elev);
@@ -337,11 +338,14 @@ body {
   aspect-ratio: 3 / 4;
   overflow: hidden;
   position: relative;
+  width: 160px;
+  height: max-content;
   transition: transform 160ms ease, box-shadow 160ms ease;
 }
 .gallery-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  border-radius: 14px;
 }
 .gallery-placeholder {
   width: 100%;
@@ -352,26 +356,33 @@ body {
   justify-content: center;
   color: var(--muted);
   font-size: 14px;
+  border-radius: 14px;
 }
 .gallery-placeholder::before {
   content: "📷";
   font-size: 24px;
   opacity: 0.5;
 }
-.gallery-card.show-more {
+.gallery-card .show-more {
   background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
   border: 2px dashed var(--border);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
 }
-.gallery-card.show-more:hover {
+.gallery-card .show-more:hover {
   background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.04) 100%);
   border-color: var(--accent);
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
 }
 .show-more-content {
-  text-align: center;
+  text-align: left;
   color: var(--text);
 }
 .show-more-text {

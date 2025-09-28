@@ -199,28 +199,40 @@
         </div>
       </section>
 
-      <section id="gallery" class="section placeholder reveal">
+
+      <section id="gallery" class="section reveal">
         <div class="container">
           <h2 class="section-title title-audiowide">Gallery</h2>
-          <div class="gallery-preview">
-            <div class="gallery-card" onclick="openLightbox('gallary/img (1).jpg', 'Gallery image 1')">
-              <img src="gallary/img (1).jpg" alt="Gallery image 1" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div class="gallery-card" onclick="openLightbox('gallary/img (2).jpg', 'Gallery image 2')">
-              <img src="gallary/img (2).jpg" alt="Gallery image 2" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div class="gallery-card" onclick="openLightbox('gallary/img (3).jpg', 'Gallery image 3')">
-              <img src="gallary/img (3).jpg" alt="Gallery image 3" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div class="gallery-card show-more" onclick="window.location.href='gallery.html'">
-              <div class="show-more-content">
-                <span class="show-more-text">Show More</span>
-                <span class="show-more-icon">→</span>
-              </div>
+          <div class="carousel" data-carousel style="padding: 5px;">
+            <div class="carousel-viewport" data-viewport>
+              <ul class="carousel-track" data-track>
+                <li class="card gallery-card" onclick="openLightbox('gallary/img (1).jpg', 'Gallery image 1')">
+                  <img src="gallary/img (1).jpg" alt="Gallery image 1" class="card-image">
+                </li>
+                <li class="card gallery-card" onclick="openLightbox('gallary/img (2).jpg', 'Gallery image 2')">
+                  <img src="gallary/img (2).jpg" alt="Gallery image 2" class="card-image">
+                </li>
+                <li class="card gallery-card" onclick="openLightbox('gallary/img (3).jpg', 'Gallery image 3')">
+                  <img src="gallary/img (3).jpg" alt="Gallery image 3" class="card-image">
+                </li>
+                <li class="card gallery-card" onclick="openLightbox('gallary/img (4).jpg', 'Gallery image 4')">
+                  <img src="gallary/img (4).jpg" alt="Gallery image 4" class="card-image">
+                </li>
+                <li class="card gallery-card show-more" onclick="window.location.href='gallery.html'">
+                  <div class="card-image show-more" onclick="window.location.href='gallery.html'">
+                    <div class="show-more-content" >
+                      <span class="show-more-text">Show</span>
+                      <span class="show-more-text">More</span>
+                      <span class="show-more-icon">→</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
+
 
       <section id="projects" class="section placeholder reveal">
         <div class="container">
