@@ -186,3 +186,95 @@ if (carousel && viewport && track) {
   window.addEventListener('touchmove', onTouchMove, { passive: true });
   window.addEventListener('touchend', onTouchEnd);
 })();
+
+// Lightbox functionality
+function openLightbox(imageSrc, caption) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  
+  if (lightbox && lightboxImg && lightboxCaption) {
+    lightboxImg.src = imageSrc;
+    lightboxImg.alt = caption;
+    lightboxCaption.textContent = caption;
+    lightbox.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  if (lightbox) {
+    lightbox.classList.remove('show');
+    document.body.style.overflow = '';
+  }
+}
+
+// Close lightbox with Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeLightbox();
+    closeProjectModal();
+  }
+});
+
+// Project modal functionality
+function openProjectModal(title, description, githubUrl) {
+  const modal = document.getElementById('project-modal');
+  const modalTitle = document.getElementById('project-modal-title');
+  const modalDescription = document.getElementById('project-modal-description');
+  const modalLink = document.getElementById('project-modal-link');
+  
+  if (modal && modalTitle && modalDescription && modalLink) {
+    modalTitle.textContent = title;
+    modalDescription.textContent = description;
+    modalLink.href = githubUrl;
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeProjectModal() {
+  const modal = document.getElementById('project-modal');
+  if (modal) {
+    modal.classList.remove('show');
+    document.body.style.overflow = '';
+  }
+}
+
+// Projects carousel logic
+const projectsCarousel = document.querySelector('.projects-carousel');
+const projectsViewport = document.querySelector('.projects-viewport');
+const projectsTrack = document.querySelector('.projects-grid');
+const projectsPrevBtn = document.querySelector('.projects-carousel [data-prev]');
+const projectsNextBtn = document.querySelector('.projects-carousel [data-next]');
+
+if (projectsCarousel && projectsViewport && projectsTrack) {
+  const getProjectCardWidth = () => {
+    const firstCard = projectsTrack.querySelector('.project-card');
+    if (!firstCard) return 0;
+    const style = window.getComputedStyle(projectsTrack);
+    const gap = parseFloat(style.columnGap || style.gap || '16');
+    return firstCard.getBoundingClientRect().width + gap;
+  };
+
+  const scrollByCards = (count) => {
+    const distance = getProjectCardWidth() * count;
+    projectsViewport.scrollBy({ left: distance, behavior: 'smooth' });
+  };
+
+  const updateButtons = () => {
+    const maxScroll = projectsTrack.scrollWidth - projectsViewport.clientWidth;
+    const current = projectsViewport.scrollLeft;
+    projectsPrevBtn.disabled = current <= 1;
+    projectsNextBtn.disabled = current >= maxScroll - 1;
+  };
+
+  projectsPrevBtn?.addEventListener('click', () => scrollByCards(-1));
+  projectsNextBtn?.addEventListener('click', () => scrollByCards(1));
+  projectsViewport.addEventListener('scroll', updateButtons);
+  window.addEventListener('resize', updateButtons);
+
+  // Initialize
+  updateButtons();
+}

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery — CONNECT X</title>
+    <meta name="description" content="Gallery — CONNECT X memories and moments">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">
+          <img src="logo.jpg" alt="CONNECT X Logo" class="brand-logo">
+          <span class="brand-name">CONNECT X</span>
+        </a>
+        <nav class="main-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#vision">Vision</a></li>
+            <li><a href="index.html#mission">Mission</a></li>
+            <li><a href="index.html#meet-us">Meet Us</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li class="has-dropdown"><a href="index.html#committees">Committees</a>
+              <div class="mega" role="menu" aria-label="Committees">
+                <div class="mega-col">
+                  <div class="mega-title">Technical</div>
+                  <ul>
+                    <li><a href="index.html#committees">AI</a></li>
+                    <li><a href="index.html#committees">Flutter</a></li>
+                    <li><a href="index.html#committees">Web</a></li>
+                    <li><a href="index.html#committees">Software Testing</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <div class="mega-title">Organizing</div>
+                  <ul>
+                    <li><a href="index.html#committees">HR</a></li>
+                    <li><a href="index.html#committees">Operations</a></li>
+                  </ul>
+                </div>
+                <div class="mega-col">
+                  <div class="mega-title">Creative</div>
+                  <ul>
+                    <li><a href="index.html#committees">PR</a></li>
+                    <li><a href="index.html#committees">UI/UX</a></li>
+                    <li><a href="index.html#committees">Media</a></li>
+                    <li><a href="index.html#committees">Content Creation</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-cta">
+          <a href="index.html#join" class="btn btn-primary">Join Us</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="drawer" id="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="drawer-header">
+        <div class="brand-row">
+          <img src="logo.jpg" alt="CONNECT X Logo" class="footer-logo">
+          <span class="brand-name title-audiowide">CONNECT X</span>
+        </div>
+        <button class="drawer-close" aria-label="Close menu">&#10005;</button>
+      </div>
+      <nav class="drawer-nav" aria-label="Mobile">
+        <ul class="drawer-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#vision">Vision</a></li>
+          <li><a href="index.html#mission">Mission</a></li>
+          <li><a href="index.html#meet-us">Meet Us</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li class="drawer-section">Committees</li>
+          <li class="drawer-sub"><a href="index.html#committees">AI</a></li>
+          <li class="drawer-sub"><a href="index.html#committees">Flutter</a></li>
+          <li class="drawer-sub"><a href="index.html#committees">Web</a></li>
+          <li class="drawer-sub"><a href="index.html#committees">Software Testing</a></li>
+          <li class="drawer-sub"><a href="index.html#committees">HR</a></li>
+          <li class="drawer-sub"><a href="index.html#committees">Operations</a></li>
+          <li class="drawer-sub"><a href="index.html#committees">PR</a></li>
+          <li class="drawer-sub"><a href="index.html#committees">UI/UX</a></li>
+          <li class="drawer-sub"><a href="index.html#committees">Media</a></li>
+          <li class="drawer-sub"><a href="index.html#committees">Content Creation</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay" tabindex="-1" aria-hidden="true"></div>
+
+    <main>
+      <section id="gallery" class="section about reveal">
+        <div class="container">
+          <h2 class="section-title title-audiowide">Gallery</h2>
+          <p class="about-text">
+            Because every little moment we share is a treasure, I want to keep them safe and close to our hearts. This is our special place where all the memories live, waiting for us to smile at them again. I hope you like them. 💖
+          </p>
+        </div>
+      </section>
+
+      <section class="section gallery-full">
+        <div class="container">
+          <div class="gallery-collage">
+            <div class="collage-item grid7" onclick="openLightbox('gallary/img (6).jpg', 'Gallery image 6')">
+              <img src="gallary/img (6).jpg" alt="Gallery image 6" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="collage-item grid10" onclick="openLightbox('gallary/img (1).jpg', 'Gallery image 1')">
+              <img src="gallary/img (1).jpg" alt="Gallery image 1" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="collage-item grid3" onclick="openLightbox('gallary/img (3).jpg', 'Gallery image 3')">
+              <img src="gallary/img (3).jpg" alt="Gallery image 3" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="collage-item grid6" onclick="openLightbox('gallary/img (4).jpg', 'Gallery image 4')">
+              <img src="gallary/img (4).jpg" alt="Gallery image 4" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="collage-item grid5" onclick="openLightbox('gallary/img (5).jpg', 'Gallery image 5')">
+              <img src="gallary/img (5).jpg" alt="Gallery image 5" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="collage-item grid4" onclick="openLightbox('gallary/img (2).jpg', 'Gallery image 2')">
+              <img src="gallary/img (2).jpg" alt="Gallery image 2" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="collage-item grid1" onclick="openLightbox('gallary/img (7).jpg', 'Gallery image 7')">
+              <img src="gallary/img (7).jpg" alt="Gallery image 7" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="collage-item grid2" onclick="openLightbox('gallary/img (8).jpg', 'Gallery image 8')">
+              <img src="gallary/img (8).jpg" alt="Gallery image 8" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="collage-item grid8" onclick="openLightbox('gallary/img (9).jpg', 'Gallery image 9')">
+              <img src="gallary/img (9).jpg" alt="Gallery image 9" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="collage-item grid9" onclick="openLightbox('gallary/img (1).jpg', 'Gallery image 1')">
+              <img src="gallary/img (1).jpg" alt="Gallery image 1" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="collage-item grid11" onclick="openLightbox('gallary/img (2).jpg', 'Gallery image 2')">
+              <img src="gallary/img (2).jpg" alt="Gallery image 2" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="brand-row">
+            <img src="logo.jpg" alt="CONNECT X Logo" class="footer-logo">
+            <span class="brand-name title-audiowide">CONNECT X</span>
+          </div>
+          <div class="copyright-inline">© 2025 CONNECT X. All rights reserved.</div>
+        </div>
+        <nav class="social" aria-label="Social media">
+          <div class="footer-title">Follow</div>
+          <ul class="footer-links">
+            <li><a href="https://www.linkedin.com/company/connectx23/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/connect__x?igsh=MWZ6bDF2NDQyNGs2cA%3D%3D" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100094206160986&rdid=DfRv4sMvAOgSS4Oh&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15tJsGDq5R%2F" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="mailto:connectx237@gmail.com" rel="noopener">E-mail</a></li>
+            <li><a href="https://www.tiktok.com/@connect__x?_t=ZS-8zpmubaPHOc&_r=1" target="_blank" rel="noopener">TikTok</a></li>
+          </ul>
+        </nav>
+        <div class="footer-committees">
+          <div class="footer-title">Committees</div>
+          <div class="committees-columns">
+            <div class="footer-col">
+              <ul>
+                <li>AI</li>
+                <li>Flutter</li>
+                <li>Web</li>
+                <li>App Testing</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <ul>
+                <li>HR</li>
+                <li>Operations</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <ul>
+                <li>PR</li>
+                <li>UI/UX</li>
+                <li>Media</li>
+                <li>Content Creation</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Mobile-only two-column layout with specific ordering -->
+          <div class="committees-columns-mobile" aria-hidden="true">
+            <div class="footer-col">
+              <ul>
+                <li>AI</li>
+                <li>Flutter</li>
+                <li>Web</li>
+                <li>App Testing</li>
+                <li>UI/UX</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <ul>
+                <li>Media</li>
+                <li>Content Creation</li>
+                <li>HR</li>
+                <li>PR</li>
+                <li>Operations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <div class="lightbox-content" onclick="event.stopPropagation()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
