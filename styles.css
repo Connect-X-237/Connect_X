@@ -452,7 +452,46 @@ body {
 }
 
 
-/* Grid area assignments */
+/* Gallery Masonry Layout */
+.gallery-masonry {
+  column-count: 4;
+  column-gap: 20px;
+  margin-top: 24px;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+  cursor: pointer;
+}
+
+.masonry-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .gallery-masonry { column-count: 3; }
+}
+@media (max-width: 768px) {
+  .gallery-masonry { column-count: 2; }
+}
+@media (max-width: 480px) {
+  .gallery-masonry { column-count: 1; }
+}
+
+/* Grid area assignments (Legacy) */
 .grid1 { grid-area: grid1; }
 .grid2 { grid-area: grid2; }
 .grid3 { grid-area: grid3; }

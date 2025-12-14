@@ -1,26 +1,60 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CONNECT X — Connecting the Dots</title>
-    <meta name="description" content="CONNECT X — Student activity organization connecting Web, Flutter, and AI.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="drawer" id="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site navigation">
-      <div class="drawer-header">
-        <div class="brand-row">
-          <img src="logo.jpg" alt="CONNECT X Logo" class="footer-logo">
-          <span class="brand-name title-audiowide">CONNECT X</span>
-        </div>
-        <button class="drawer-close" aria-label="Close menu">&#10005;</button>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CONNECT X — Connecting the Dots</title>
+  <meta name="description" content="CONNECT X — Student activity organization connecting Web, Flutter, and AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="drawer" id="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Site navigation">
+    <div class="drawer-header">
+      <div class="brand-row">
+        <img src="logo.jpg" alt="CONNECT X Logo" class="footer-logo">
+        <span class="brand-name title-audiowide">CONNECT X</span>
       </div>
-      <nav class="drawer-nav" aria-label="Mobile">
-        <ul class="drawer-links">
+      <button class="drawer-close" aria-label="Close menu">&#10005;</button>
+    </div>
+    <nav class="drawer-nav" aria-label="Mobile">
+      <ul class="drawer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#meet-us">Meet Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li class="drawer-section">Committees</li>
+        <li class="drawer-sub"><a href="#committees">AI</a></li>
+        <li class="drawer-sub"><a href="#committees">Flutter</a></li>
+        <li class="drawer-sub"><a href="#committees">Web</a></li>
+        <li class="drawer-sub"><a href="#committees">Software Testing</a></li>
+        <li class="drawer-sub"><a href="#committees">HR</a></li>
+        <li class="drawer-sub"><a href="#committees">Operations</a></li>
+        <li class="drawer-sub"><a href="#committees">PR</a></li>
+        <li class="drawer-sub"><a href="#committees">UI/UX</a></li>
+        <li class="drawer-sub"><a href="#committees">Media</a></li>
+        <li class="drawer-sub"><a href="#committees">Content Creation & marketing</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="drawer-overlay" id="drawer-overlay" tabindex="-1" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">
+        <img src="logo.jpg" alt="CONNECT X Logo" class="brand-logo">
+        <span class="brand-name">CONNECT X</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#vision">Vision</a></li>
@@ -28,414 +62,533 @@
           <li><a href="#meet-us">Meet Us</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li class="drawer-section">Committees</li>
-          <li class="drawer-sub"><a href="#committees">AI</a></li>
-          <li class="drawer-sub"><a href="#committees">Flutter</a></li>
-          <li class="drawer-sub"><a href="#committees">Web</a></li>
-          <li class="drawer-sub"><a href="#committees">Software Testing</a></li>
-          <li class="drawer-sub"><a href="#committees">HR</a></li>
-          <li class="drawer-sub"><a href="#committees">Operations</a></li>
-          <li class="drawer-sub"><a href="#committees">PR</a></li>
-          <li class="drawer-sub"><a href="#committees">UI/UX</a></li>
-          <li class="drawer-sub"><a href="#committees">Media</a></li>
-          <li class="drawer-sub"><a href="#committees">Content Creation & marketing</a></li>
+          <li class="has-dropdown"><a href="#committees">Committees</a>
+            <div class="mega" role="menu" aria-label="Committees">
+              <div class="mega-col">
+                <div class="mega-title">Technical</div>
+                <ul>
+                  <li><a href="#committees">AI</a></li>
+                  <li><a href="#committees">Flutter</a></li>
+                  <li><a href="#committees">Web</a></li>
+                  <li><a href="#committees">Software Testing</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <div class="mega-title">Organizing</div>
+                <ul>
+                  <li><a href="#committees">HR</a></li>
+                  <li><a href="#committees">Operations</a></li>
+                </ul>
+              </div>
+              <div class="mega-col">
+                <div class="mega-title">Creative</div>
+                <ul>
+                  <li><a href="#committees">PR</a></li>
+                  <li><a href="#committees">UI/UX</a></li>
+                  <li><a href="#committees">Media</a></li>
+                  <li><a href="#committees">Content Creation & marketing</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
-    </div>
-    <div class="drawer-overlay" id="drawer-overlay" tabindex="-1" aria-hidden="true"></div>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a href="#home" class="brand">
-          <img src="logo.jpg" alt="CONNECT X Logo" class="brand-logo">
-          <span class="brand-name">CONNECT X</span>
-        </a>
-        <nav class="main-nav" aria-label="Primary">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#vision">Vision</a></li>
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#meet-us">Meet Us</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li class="has-dropdown"><a href="#committees">Committees</a>
-              <div class="mega" role="menu" aria-label="Committees">
-                <div class="mega-col">
-                  <div class="mega-title">Technical</div>
-                  <ul>
-                    <li><a href="#committees">AI</a></li>
-                    <li><a href="#committees">Flutter</a></li>
-                    <li><a href="#committees">Web</a></li>
-                    <li><a href="#committees">Software Testing</a></li>
-                  </ul>
-                </div>
-                <div class="mega-col">
-                  <div class="mega-title">Organizing</div>
-                  <ul>
-                    <li><a href="#committees">HR</a></li>
-                    <li><a href="#committees">Operations</a></li>
-                  </ul>
-                </div>
-                <div class="mega-col">
-                  <div class="mega-title">Creative</div>
-                  <ul>
-                    <li><a href="#committees">PR</a></li>
-                    <li><a href="#committees">UI/UX</a></li>
-                    <li><a href="#committees">Media</a></li>
-                    <li><a href="#committees">Content Creation & marketing</a></li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-cta">
-          <a href="#join" class="btn btn-primary">Join Us</a>
-        </div>
-      </div>
-    </header>
-
-    <main id="home">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-content">
-          <h1 id="hero-title" class="title-audiowide">CONNECT X</h1>
-          <p class="subtitle">Connecting the dots across Web · Flutter · AI</p>
-        </div>
-        <div class="hero-bg"></div>
-      </section>
-
-      <section id="about" class="section about reveal">
-        <div class="container">
-          <h2 class="section-title title-audiowide">About</h2>
-          <p class="about-text">
-            Connect X is a nonprofit student activity based in the Faculty of Computer and Information Sciences
-             at Ain Shams University. Guided by our slogan, “Connecting the Dots”, we strive to bridge the gap
-              between university education and real market needs by equipping students with both knowledge 
-              and hands-on experience. At our core, we are a vibrant community of students passionate about 
-              technology, creativity, and collaboration. Through diverse committees—ranging from AI and Web 
-              to HR, Media, PR, and beyond—we create a dynamic space for learning, experimenting, and building 
-              impactful projects together.
-          </p>
-        
-        </div>
-      </section>
-
-      <section id="vision" class="section variant reveal">
-        <div class="container">
-          <h2 class="section-title title-audiowide">Vision</h2>
-          <p class="about-text">
-            In the next decade, Connect X aspires to become a fully integrated educational academy that empowers students to acquire practical skills. Our long-term goal is to see a startup founded by an ex-ConnectX president or ex-member, leveraging the knowledge, experience, and growth we've gained through our community, and to recruit other members of our family to create more solutions and drive growth.
-          </p>
-        </div>
-      </section>
-
-      <section id="mission" class="section variant reveal">
-        <div class="container">
-          <h2 class="section-title title-audiowide">Mission</h2>
-          <ul class="vm-list">
-            <li>Push boundaries through innovation and collaboration.</li>
-            <li>Build two cross-committee projects to simulate real corporate teamwork.</li>
-            <li>Host a large-scale Connect X Hackathon for students to showcase skills.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section meet-us reveal" id="meet-us" aria-labelledby="meet-us-title">
-        <div class="container">
-          <div class="meet-us-header">
-            <h2 id="meet-us-title" class="section-title-medium">Meet Us</h2>
-          </div>
-          <div class="carousel" data-carousel>
-            <button class="carousel-nav prev" aria-label="Previous" data-prev>
-              <span aria-hidden="true">&#8592;</span>
-            </button>
-            <div class="carousel-viewport" data-viewport>
-              <ul class="carousel-track" data-track>
-                <!-- Example member cards; replace images/names later -->
-                <li class="card">
-                  <img src="meetUs\P.jpg" alt="President" class="card-image">
-                  <div class="card-body">
-                    <div class="card-name">Ahmed Hazem</div>
-                    <div class="card-role">President</div>
-                  </div>
-                </li>
-                <li class="card">
-                  <img src="meetUs/vp.jpg" alt="Vice President" class="card-image">
-                  <div class="card-body">
-                    <div class="card-name">Jana Waleed</div>
-                    <div class="card-role">Vice President</div>
-                  </div>
-                </li>
-                <li class="card">
-                  <img src="meetUs/zyadKhalaf.jpg"in future".jpg" alt="HR Director" class="card-image">
-                  <div class="card-body">
-                    <div class="card-name">Ziad Khalaf </div>
-                    <div class="card-role">HR Director</div>
-                  </div>
-                </li>
-                <li class="card">
-                  <img src="meetUs/Wael.jpg"in future".jpg" alt="PR Director" class="card-image">
-                  <div class="card-body">
-                    <div class="card-name">Ahmed Wael</div>
-                    <div class="card-role">PR Director</div>
-                  </div>
-                </li>
-                <li class="card">
-                  <img src="meetUs/amk.jpg"in future".jpg" alt="Head of UI/UX" class="card-image">
-                  <div class="card-body">
-                    <div class="card-name">Ahmed Mohamed Khalaf</div>
-                    <div class="card-role">UI/UX Director</div>
-                  </div>
-                </li>
-                <li class="card">
-                  <img src="meetUs/oma.jpg"in future".jpg" alt="content creation & marketing Director" class="card-image">
-                  <div class="card-body">
-                    <div class="card-name">Omar Abdelnaby</div>
-                    <div class="card-role">Content Creation & Marketing Director</div>
-                  </div>
-                </li>
-                <!-- <li class="card">
-                  <img src="meetUs/business-person-gesturing-white-background-19126378-2422452828 - Copy.jpg" alt="Head of AI" class="card-image">
-                  <div class="card-body">
-                    <div class="card-name">Head of AI</div>
-                    <div class="card-role">Research</div>
-                  </div>
-                </li> -->
-              </ul>
-            </div>
-            <button class="carousel-nav next" aria-label="Next" data-next>
-              <span aria-hidden="true">&#8594;</span>
-            </button>
-          </div>
-          <div class="carousel-progress" aria-hidden="true">
-            <div class="carousel-progress-bar" data-progress></div>
-          </div>
-        </div>
-      </section>
-
-
-      <section id="gallery" class="section reveal">
-        <div class="container">
-          <h2 class="section-title title-audiowide">Gallery</h2>
-          <div class="carousel" data-carousel style="padding: 5px;">
-            <div class="carousel-viewport" data-viewport>
-              <ul class="carousel-track" data-track>
-                <li class="card gallery-card" onclick="openLightbox('gallary/img (1).jpg', 'Gallery image 1')">
-                  <img src="gallary/img (1).jpg" alt="Gallery image 1" class="card-image">
-                </li>
-                <li class="card gallery-card" onclick="openLightbox('gallary/img (2).jpg', 'Gallery image 2')">
-                  <img src="gallary/img (2).jpg" alt="Gallery image 2" class="card-image">
-                </li>
-                <li class="card gallery-card" onclick="openLightbox('gallary/img (3).jpg', 'Gallery image 3')">
-                  <img src="gallary/img (3).jpg" alt="Gallery image 3" class="card-image">
-                </li>
-                <li class="card gallery-card" onclick="openLightbox('gallary/img (4).jpg', 'Gallery image 4')">
-                  <img src="gallary/img (4).jpg" alt="Gallery image 4" class="card-image">
-                </li>
-                <li class="card gallery-card show-more" onclick="window.location.href='gallery.html'">
-                  <div class="card-image show-more" onclick="window.location.href='gallery.html'">
-                    <div class="show-more-content" >
-                      <span class="show-more-text">Show</span>
-                      <span class="show-more-text">More</span>
-                      <span class="show-more-icon">→</span>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section placeholder reveal">
-        <div class="container">
-          <h2 class="section-title title-audiowide">Projects</h2>
-          <div class="projects-carousel">
-            <button class="projects-nav prev" aria-label="Previous" data-prev>
-              <span aria-hidden="true">&#8592;</span>
-            </button>
-            <div class="projects-viewport" data-viewport>
-              <div class="projects-grid" data-track>
-                <div class="project-card" onclick="openProjectModal('JARVIS – Intelligent Car Assistant', 'Bring AI into driving with JARVIS: your smart co-pilot on the road. From facial recognition and voice commands to real-time weather updates and obstacle detection, JARVIS is designed to make your drive safer, smoother, and more intuitive.', 'https://github.com/ConnectX-ASU/Jarvis---Your-Intelligent-Car')">
-                  <h3 class="project-title">JARVIS – Intelligent Car Assistant</h3>
-                  <p class="project-description">Bring AI into driving with JARVIS: your smart co-pilot on the road. From facial recognition and voice commands to real-time weather updates and obstacle detection, JARVIS is designed to make your drive safer, smoother, and more intuitive.</p>
-                  <span class="more-link">More...</span>
-                </div>
-                <div class="project-card" onclick="openProjectModal('GOUT (Goal + Scout) – Fantasy Football Predictor', 'GOUT uses web scraping and predictive modeling to support Fantasy Premier League strategy. By analyzing player stats and forecasting expected goals, it helps you make smarter picks and dominate the leaderboard.', 'https://github.com/ConnectX-ASU/GOUT')">
-                  <h3 class="project-title">GOUT (Goal + Scout) – Fantasy Football Predictor</h3>
-                  <p class="project-description">GOUT uses web scraping and predictive modeling to support Fantasy Premier League strategy. By analyzing player stats and forecasting expected goals, it helps you make smarter picks and dominate the leaderboard.</p>
-                  <span class="more-link">More...</span>
-                </div>
-                <div class="project-card" onclick="openProjectModal('Student Stress Detection & Support System', 'A machine learning project dedicated to student mental wellness. By analyzing survey data and detecting stress patterns, the system offers personalized suggestions and interventions tailored to real student challenges.', 'https://github.com/ConnectX-ASU/Student-s-Mental-Health')">
-                  <h3 class="project-title">Student Stress Detection & Support System</h3>
-                  <p class="project-description">A machine learning project dedicated to student mental wellness. By analyzing survey data and detecting stress patterns, the system offers personalized suggestions and interventions tailored to real student challenges.</p>
-                  <span class="more-link">More...</span>
-                </div>
-                <div class="project-card" onclick="openProjectModal('House Pricing Analysis', 'Using real estate data from over 1.4 million properties across 19 U.S. states, this project identifies which features most affect housing prices. The goal: data-driven insights to support buyers, sellers, and investors.', 'https://github.com/ConnectX-ASU/Real-State-Analysis')">
-                  <h3 class="project-title">House Pricing Analysis</h3>
-                  <p class="project-description">Using real estate data from over 1.4 million properties across 19 U.S. states, this project identifies which features most affect housing prices. The goal: data-driven insights to support buyers, sellers, and investors.</p>
-                  <span class="more-link">More...</span>
-                </div>
-                <div class="project-card" onclick="openProjectModal('CSS – Crime Similarity System', 'CSS is an AI framework designed to compare socio-economic and crime data among cities. It helps municipalities find similar communities, share strategies, and make proactive, data-driven decisions.', 'https://github.com/ConnectX-ASU/CSS---the-Crime-Similarity-System')">
-                  <h3 class="project-title">CSS – Crime Similarity System</h3>
-                  <p class="project-description">CSS is an AI framework designed to compare socio-economic and crime data among cities. It helps municipalities find similar communities, share strategies, and make proactive, data-driven decisions.</p>
-                  <span class="more-link">More...</span>
-                </div>
-              </div>
-            </div>
-            <button class="projects-nav next" aria-label="Next" data-next>
-              <span aria-hidden="true">&#8594;</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section id="committees" class="section committees reveal">
-        <div class="container">
-          <h2 class="section-title title-audiowide">Committees</h2>
-          <div class="committees-layout">
-            <div class="comm-col">
-              <div class="group-head">Technical</div>
-              <div class="nodes">
-                <div class="node">AI</div>
-                <div class="node">Flutter</div>
-                <div class="node">Web</div>
-                <div class="node">Software Testing</div>
-                <div class="node">UI/UX</div>
-              </div>
-            </div>
-            <div class="comm-col">
-              <div class="group-head">Creative</div>
-              <div class="nodes">
-                <div class="node">PR</div>
-                <div class="node">Media</div>
-                <div class="node">Content Creation</div>
-              </div>
-            </div>
-          </div>
-          <div class="connectors" aria-hidden="true"></div>
-          <!-- Operations grid under the above groups -->
-          <div class="ops-grid">
-            <div class="column1">
-              <div class="group-head">Organizing</div>
-              <div class="nodes">
-                <div class="node">HR</div>
-                <div class="node">Operations</div>
-              </div>
-            </div>
-            <div class="column2">
-              
-            </div>
-            <div class="column3"></div>
-          </div>
-        </div>
-      </section>
-
-      <section id="join" class="section placeholder">
-        <div class="container">
-          <h2 class="section-title title-audiowide">Join Us</h2>
-              <div class="nodes join-buttons">
-              <a href="" class="btn btn-wide btn-member">Join Us As a Member</a>
-              <a href="https://forms.office.com/r/DumTcqvruU" class="btn btn-wide btn-head">Be Head</a>
-              </div>
-        </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="footer-brand">
-          <div class="brand-row">
-            <img src="logo.jpg" alt="CONNECT X Logo" class="footer-logo">
-            <span class="brand-name title-audiowide">CONNECT X</span>
-          </div>
-          <div class="copyright-inline">© 2025 CONNECT X. All rights reserved.</div>
-        </div>
-        <nav class="social" aria-label="Social media">
-          <div class="footer-title">Follow</div>
-          <ul class="footer-links">
-            <li><a href="https://www.linkedin.com/company/connectx23/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://www.instagram.com/connect__x?igsh=MWZ6bDF2NDQyNGs2cA%3D%3D" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100094206160986&rdid=DfRv4sMvAOgSS4Oh&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15tJsGDq5R%2F" target="_blank" rel="noopener">Facebook</a></li>
-            <li><a href="mailto:connectx237@gmail.com" rel="noopener">E-mail</a></li>
-            <li><a href="https://www.tiktok.com/@connect__x?_t=ZS-8zpmubaPHOc&_r=1" target="_blank" rel="noopener">TikTok</a></li>
-          </ul>
-        </nav>
-        <div class="footer-committees">
-          <div class="footer-title">Committees</div>
-          <div class="committees-columns">
-            <div class="footer-col">
-              <ul>
-                <li>AI</li>
-                <li>Flutter</li>
-                <li>Web</li>
-                <li>App Testing</li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <ul>
-                <li>HR</li>
-                <li>Operations</li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <ul>
-                <li>PR</li>
-                <li>UI/UX</li>
-                <li>Media</li>
-                <li>Content Creation</li>
-              </ul>
-            </div>
-          </div>
-          <!-- Mobile-only two-column layout with specific ordering -->
-          <div class="committees-columns-mobile" aria-hidden="true">
-            <div class="footer-col">
-              <ul>
-                <li>AI</li>
-                <li>Flutter</li>
-                <li>Web</li>
-                <li>App Testing</li>
-                <li>UI/UX</li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <ul>
-                <li>Media</li>
-                <li>Content Creation</li>
-                <li>HR</li>
-                <li>PR</li>
-                <li>Operations</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-      <div class="lightbox-content" onclick="event.stopPropagation()">
-        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-        <img id="lightbox-img" src="" alt="">
-        <div id="lightbox-caption" class="lightbox-caption"></div>
+      <div class="header-cta">
+        <a href="#join" class="btn btn-primary">Join Us</a>
       </div>
     </div>
+  </header>
 
-    <!-- Project Modal -->
-    <div id="project-modal" class="project-modal" onclick="closeProjectModal()">
-      <div class="project-modal-content" onclick="event.stopPropagation()">
-        <span class="project-modal-close" onclick="closeProjectModal()">&times;</span>
-        <div class="project-modal-content-inner">
-          <h3 id="project-modal-title" class="project-modal-title"></h3>
-          <p id="project-modal-description" class="project-modal-description"></p>
-          <a id="project-modal-link" href="#" target="_blank" class="project-show-button">Show from here</a>
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title" class="title-audiowide">CONNECT X</h1>
+        <p class="subtitle">Connecting the dots across Web · Flutter · AI</p>
+      </div>
+      <div class="hero-bg"></div>
+    </section>
+
+    <section id="about" class="section about reveal">
+      <div class="container">
+        <h2 class="section-title title-audiowide">About</h2>
+        <p class="about-text">
+          Connect X is a nonprofit student activity based in the Faculty of Computer and Information Sciences
+          at Ain Shams University. Guided by our slogan, “Connecting the Dots”, we strive to bridge the gap
+          between university education and real market needs by equipping students with both knowledge
+          and hands-on experience. At our core, we are a vibrant community of students passionate about
+          technology, creativity, and collaboration. Through diverse committees—ranging from AI and Web
+          to HR, Media, PR, and beyond—we create a dynamic space for learning, experimenting, and building
+          impactful projects together.
+        </p>
+
+      </div>
+    </section>
+
+    <section id="vision" class="section variant reveal">
+      <div class="container">
+        <h2 class="section-title title-audiowide">Vision</h2>
+        <p class="about-text">
+          In the next decade, Connect X aspires to become a fully integrated educational academy that empowers students
+          to acquire practical skills. Our long-term goal is to see a startup founded by an ex-ConnectX president or
+          ex-member, leveraging the knowledge, experience, and growth we've gained through our community, and to recruit
+          other members of our family to create more solutions and drive growth.
+        </p>
+      </div>
+    </section>
+
+    <section id="mission" class="section variant reveal">
+      <div class="container">
+        <h2 class="section-title title-audiowide">Mission</h2>
+        <ul class="vm-list">
+          <li>Push boundaries through innovation and collaboration.</li>
+          <li>Build two cross-committee projects to simulate real corporate teamwork.</li>
+          <li>Host a large-scale Connect X Hackathon for students to showcase skills.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section meet-us reveal" id="meet-us" aria-labelledby="meet-us-title">
+      <div class="container">
+        <div class="meet-us-header">
+          <h2 id="meet-us-title" class="section-title-medium">Meet Us</h2>
+        </div>
+        <div class="carousel" data-carousel>
+          <button class="carousel-nav prev" aria-label="Previous" data-prev>
+            <span aria-hidden="true">&#8592;</span>
+          </button>
+          <div class="carousel-viewport" data-viewport>
+            <ul class="carousel-track" data-track>
+              <!-- Board -->
+              <li class="card">
+                <img src="meetUs\P.jpg" alt="President" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Ahmed Hazem</div>
+                  <div class="card-role">President</div>
+                </div>
+              </li>
+              <!-- HR -->
+              <li class="card">
+                <img src="meetUs/zyadKhalaf.jpg" alt="HR Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Ziad Khalaf</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <li class="card">
+                <img src="meetUs/noorMasry.jpg" alt="HR Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Noor Masry</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <li class="card">
+                <img src="meetUs/3.jpg" alt="HR Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Amr Maged</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <li class="card">
+                <img src="meetUs/Mohi.png" alt="HR Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Mohi El-Din Yakout</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <!-- PR -->
+              <li class="card">
+                <img src="meetUs/Wael.jpg" alt="PR Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Ahmed Wael</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <li class="card">
+                <img src="meetUs/Kareem.jpg" alt="PR Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Kareem Hazem</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <li class="card">
+                <img src="meetUs/marwan.jpg" alt="PR Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Marwan</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <li class="card">
+                <img src="meetUs/6.jpg" alt="PR Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Heba Matar</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <!-- Web -->
+              <li class="card">
+                <img src="meetUs/MohamedKhaled.jpg" alt="Web Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Mohamed Khaled</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <li class="card">
+                <img src="meetUs/RahmaMansour.jpg" alt="Web Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Rahma Mansour</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <li class="card">
+                <img src="meetUs/Basant.jpeg" alt="Web Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Basant Eid</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <li class="card">
+                <img src="meetUs/Kharabeta.jpg" alt="Web Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Mostafa Kharbita</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <!-- Flutter -->
+              <li class="card">
+                <img src="meetUs/nora.png" alt="Flutter Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Nora El-Karry</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <li class="card">
+                <img src="meetUs/mohamed.jpg" alt="Flutter Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Mohamed Gamil</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <!-- AI -->
+              <li class="card">
+                <img src="meetUs/AmmarAdel.jpg" alt="AI Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Ammar Adel</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <li class="card">
+                <img src="meetUs/4.jpg" alt="AI Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Youssef Soliman</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <li class="card">
+                <img src="meetUs/7.jpg" alt="AI Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Omar Sayed</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <li class="card">
+                <img src="meetUs/baher.jpg" alt="AI Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Baher Sherif</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <!-- Software Testing -->
+              <li class="card">
+                <img src="meetUs/1.jpg" alt="Testing Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Ahmed Shosha</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <li class="card">
+                <img src="meetUs/2.jpg" alt="Testing Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Ahmed Sherif</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <!-- UI/UX -->
+              <li class="card">
+                <img src="meetUs/amk.jpg" alt="UI/UX Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Ahmed Mohamed Khalaf</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <!-- Media -->
+              <li class="card">
+                <img src="meetUs/5.jpg" alt="Media Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Mohamed Abdelfattah</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+              <!-- Content Creation -->
+              <li class="card">
+                <img src="meetUs/oma.jpg" alt="Content Instructor" class="card-image">
+                <div class="card-body">
+                  <div class="card-name">Omar Abdelnaby</div>
+                  <div class="card-role">Instructor</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="carousel-nav next" aria-label="Next" data-next>
+            <span aria-hidden="true">&#8594;</span>
+          </button>
+        </div>
+        <div class="carousel-progress" aria-hidden="true">
+          <div class="carousel-progress-bar" data-progress></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="gallery" class="section reveal">
+      <div class="container">
+        <h2 class="section-title title-audiowide">Gallery</h2>
+        <div class="carousel" data-carousel style="padding: 5px;">
+          <div class="carousel-viewport" data-viewport>
+            <ul class="carousel-track" data-track>
+              <li class="card gallery-card" onclick="openLightbox('gallary/img (1).jpg', 'Gallery image 1')">
+                <img src="gallary/img (1).jpg" alt="Gallery image 1" class="card-image">
+              </li>
+              <li class="card gallery-card" onclick="openLightbox('gallary/img (2).jpg', 'Gallery image 2')">
+                <img src="gallary/img (2).jpg" alt="Gallery image 2" class="card-image">
+              </li>
+              <li class="card gallery-card" onclick="openLightbox('gallary/img (3).jpg', 'Gallery image 3')">
+                <img src="gallary/img (3).jpg" alt="Gallery image 3" class="card-image">
+              </li>
+              <li class="card gallery-card" onclick="openLightbox('gallary/img (4).jpg', 'Gallery image 4')">
+                <img src="gallary/img (4).jpg" alt="Gallery image 4" class="card-image">
+              </li>
+              <li class="card gallery-card show-more" onclick="window.location.href='gallery.html'">
+                <div class="card-image show-more" onclick="window.location.href='gallery.html'">
+                  <div class="show-more-content">
+                    <span class="show-more-text">Show</span>
+                    <span class="show-more-text">More</span>
+                    <span class="show-more-icon">→</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section placeholder reveal">
+      <div class="container">
+        <h2 class="section-title title-audiowide">Projects</h2>
+        <div class="projects-carousel">
+          <button class="projects-nav prev" aria-label="Previous" data-prev>
+            <span aria-hidden="true">&#8592;</span>
+          </button>
+          <div class="projects-viewport" data-viewport>
+            <div class="projects-grid" data-track>
+              <div class="project-card"
+                onclick="openProjectModal('JARVIS – Intelligent Car Assistant', 'Bring AI into driving with JARVIS: your smart co-pilot on the road. From facial recognition and voice commands to real-time weather updates and obstacle detection, JARVIS is designed to make your drive safer, smoother, and more intuitive.', 'https://github.com/ConnectX-ASU/Jarvis---Your-Intelligent-Car')">
+                <h3 class="project-title">JARVIS – Intelligent Car Assistant</h3>
+                <p class="project-description">Bring AI into driving with JARVIS: your smart co-pilot on the road. From
+                  facial recognition and voice commands to real-time weather updates and obstacle detection, JARVIS is
+                  designed to make your drive safer, smoother, and more intuitive.</p>
+                <span class="more-link">More...</span>
+              </div>
+              <div class="project-card"
+                onclick="openProjectModal('GOUT (Goal + Scout) – Fantasy Football Predictor', 'GOUT uses web scraping and predictive modeling to support Fantasy Premier League strategy. By analyzing player stats and forecasting expected goals, it helps you make smarter picks and dominate the leaderboard.', 'https://github.com/ConnectX-ASU/GOUT')">
+                <h3 class="project-title">GOUT (Goal + Scout) – Fantasy Football Predictor</h3>
+                <p class="project-description">GOUT uses web scraping and predictive modeling to support Fantasy Premier
+                  League strategy. By analyzing player stats and forecasting expected goals, it helps you make smarter
+                  picks and dominate the leaderboard.</p>
+                <span class="more-link">More...</span>
+              </div>
+              <div class="project-card"
+                onclick="openProjectModal('Student Stress Detection & Support System', 'A machine learning project dedicated to student mental wellness. By analyzing survey data and detecting stress patterns, the system offers personalized suggestions and interventions tailored to real student challenges.', 'https://github.com/ConnectX-ASU/Student-s-Mental-Health')">
+                <h3 class="project-title">Student Stress Detection & Support System</h3>
+                <p class="project-description">A machine learning project dedicated to student mental wellness. By
+                  analyzing survey data and detecting stress patterns, the system offers personalized suggestions and
+                  interventions tailored to real student challenges.</p>
+                <span class="more-link">More...</span>
+              </div>
+              <div class="project-card"
+                onclick="openProjectModal('House Pricing Analysis', 'Using real estate data from over 1.4 million properties across 19 U.S. states, this project identifies which features most affect housing prices. The goal: data-driven insights to support buyers, sellers, and investors.', 'https://github.com/ConnectX-ASU/Real-State-Analysis')">
+                <h3 class="project-title">House Pricing Analysis</h3>
+                <p class="project-description">Using real estate data from over 1.4 million properties across 19 U.S.
+                  states, this project identifies which features most affect housing prices. The goal: data-driven
+                  insights to support buyers, sellers, and investors.</p>
+                <span class="more-link">More...</span>
+              </div>
+              <div class="project-card"
+                onclick="openProjectModal('CSS – Crime Similarity System', 'CSS is an AI framework designed to compare socio-economic and crime data among cities. It helps municipalities find similar communities, share strategies, and make proactive, data-driven decisions.', 'https://github.com/ConnectX-ASU/CSS---the-Crime-Similarity-System')">
+                <h3 class="project-title">CSS – Crime Similarity System</h3>
+                <p class="project-description">CSS is an AI framework designed to compare socio-economic and crime data
+                  among cities. It helps municipalities find similar communities, share strategies, and make proactive,
+                  data-driven decisions.</p>
+                <span class="more-link">More...</span>
+              </div>
+            </div>
+          </div>
+          <button class="projects-nav next" aria-label="Next" data-next>
+            <span aria-hidden="true">&#8594;</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="committees" class="section committees reveal">
+      <div class="container">
+        <h2 class="section-title title-audiowide">Committees</h2>
+        <div class="committees-layout">
+          <div class="comm-col">
+            <div class="group-head">Technical</div>
+            <div class="nodes">
+              <div class="node">AI</div>
+              <div class="node">Flutter</div>
+              <div class="node">Web</div>
+              <div class="node">Software Testing</div>
+              <div class="node">UI/UX</div>
+            </div>
+          </div>
+          <div class="comm-col">
+            <div class="group-head">Creative</div>
+            <div class="nodes">
+              <div class="node">PR</div>
+              <div class="node">Media</div>
+              <div class="node">Content Creation</div>
+            </div>
+          </div>
+        </div>
+        <div class="connectors" aria-hidden="true"></div>
+        <!-- Operations grid under the above groups -->
+        <div class="ops-grid">
+          <div class="column1">
+            <div class="group-head">Organizing</div>
+            <div class="nodes">
+              <div class="node">HR</div>
+              <div class="node">Operations</div>
+            </div>
+          </div>
+          <div class="column2">
+
+          </div>
+          <div class="column3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="section placeholder">
+      <div class="container">
+        <h2 class="section-title title-audiowide">Join Us</h2>
+        <div class="nodes join-buttons">
+          <a href="" class="btn btn-wide btn-member">Join Us As a Member</a>
+          <a href="https://forms.office.com/r/DumTcqvruU" class="btn btn-wide btn-head">Be Head</a>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="brand-row">
+          <img src="logo.jpg" alt="CONNECT X Logo" class="footer-logo">
+          <span class="brand-name title-audiowide">CONNECT X</span>
+        </div>
+        <div class="copyright-inline">© 2025 CONNECT X. All rights reserved.</div>
+      </div>
+      <nav class="social" aria-label="Social media">
+        <div class="footer-title">Follow</div>
+        <ul class="footer-links">
+          <li><a href="https://www.linkedin.com/company/connectx23/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/connect__x?igsh=MWZ6bDF2NDQyNGs2cA%3D%3D" target="_blank"
+              rel="noopener">Instagram</a></li>
+          <li><a
+              href="https://www.facebook.com/profile.php?id=100094206160986&rdid=DfRv4sMvAOgSS4Oh&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15tJsGDq5R%2F"
+              target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="mailto:connectx237@gmail.com" rel="noopener">E-mail</a></li>
+          <li><a href="https://www.tiktok.com/@connect__x?_t=ZS-8zpmubaPHOc&_r=1" target="_blank"
+              rel="noopener">TikTok</a></li>
+        </ul>
+      </nav>
+      <div class="footer-committees">
+        <div class="footer-title">Committees</div>
+        <div class="committees-columns">
+          <div class="footer-col">
+            <ul>
+              <li>AI</li>
+              <li>Flutter</li>
+              <li>Web</li>
+              <li>App Testing</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li>HR</li>
+              <li>Operations</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li>PR</li>
+              <li>UI/UX</li>
+              <li>Media</li>
+              <li>Content Creation</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Mobile-only two-column layout with specific ordering -->
+        <div class="committees-columns-mobile" aria-hidden="true">
+          <div class="footer-col">
+            <ul>
+              <li>AI</li>
+              <li>Flutter</li>
+              <li>Web</li>
+              <li>App Testing</li>
+              <li>UI/UX</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li>Media</li>
+              <li>Content Creation</li>
+              <li>HR</li>
+              <li>PR</li>
+              <li>Operations</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+  </footer>
 
-    <script src="script.js"></script>
-  </body>
-  </html>
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
 
+  <!-- Project Modal -->
+  <div id="project-modal" class="project-modal" onclick="closeProjectModal()">
+    <div class="project-modal-content" onclick="event.stopPropagation()">
+      <span class="project-modal-close" onclick="closeProjectModal()">&times;</span>
+      <div class="project-modal-content-inner">
+        <h3 id="project-modal-title" class="project-modal-title"></h3>
+        <p id="project-modal-description" class="project-modal-description"></p>
+        <a id="project-modal-link" href="#" target="_blank" class="project-show-button">Show from here</a>
+      </div>
+    </div>
+  </div>
 
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -48,6 +48,33 @@ if (carousel && viewport && track) {
   // Initialize
   updateButtons();
   updateProgress();
+
+  // Auto-scroll logic
+  let autoScrollInterval;
+  const startAutoScroll = () => {
+    stopAutoScroll();
+    autoScrollInterval = setInterval(() => {
+      const maxScroll = track.scrollWidth - viewport.clientWidth;
+      if (viewport.scrollLeft >= maxScroll - 5) { // Threshold for "end"
+        viewport.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        scrollByCards(1);
+      }
+    }, 2500); // 2.5s interval
+  };
+
+  const stopAutoScroll = () => {
+    clearInterval(autoScrollInterval);
+  };
+
+  // Pause on interaction
+  viewport.addEventListener('mouseenter', stopAutoScroll);
+  viewport.addEventListener('mouseleave', startAutoScroll);
+  viewport.addEventListener('touchstart', stopAutoScroll, { passive: true });
+  viewport.addEventListener('touchend', startAutoScroll);
+
+  // Start initially
+  startAutoScroll();
 }
 
 // Scroll reveal via IntersectionObserver
