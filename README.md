@@ -19,7 +19,8 @@ C:\Projects\ConnectXWebsite
 ├─ script.js         # Carousel + scroll-reveal logic
 ├─ logo.jpg          # Site logo
 ├─ bg.png            # Hero background image
-└─ meetUs\           # Meet Us member images
+├─ meetUs\           # Meet Us member images
+└─ gallary\           # gallary for memories images
 ```
 
 Quick start
