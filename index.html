@@ -27,16 +27,11 @@
       <ul class="drawer-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#vision">Vision</a></li>
-        <li><a href="#mission">Mission</a></li>
-        <li><a href="#meet-us">Meet Us</a></li>
-        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#projects">Projects</a></li>
         <li class="drawer-section">Committees</li>
         <li class="drawer-sub"><a href="#committees">AI</a></li>
         <li class="drawer-sub"><a href="#committees">Flutter</a></li>
         <li class="drawer-sub"><a href="#committees">Web</a></li>
-        <li class="drawer-sub"><a href="#committees">Software Testing</a></li>
         <li class="drawer-sub"><a href="#committees">HR</a></li>
         <li class="drawer-sub"><a href="#committees">Operations</a></li>
         <li class="drawer-sub"><a href="#committees">PR</a></li>
@@ -57,10 +52,6 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#vision">Vision</a></li>
-          <li><a href="#mission">Mission</a></li>
-          <li><a href="#meet-us">Meet Us</a></li>
-          <li><a href="#gallery">Gallery</a></li>
           <li><a href="#projects">Projects</a></li>
           <li class="has-dropdown"><a href="#committees">Committees</a>
             <div class="mega" role="menu" aria-label="Committees">
@@ -70,7 +61,6 @@
                   <li><a href="#committees">AI</a></li>
                   <li><a href="#committees">Flutter</a></li>
                   <li><a href="#committees">Web</a></li>
-                  <li><a href="#committees">Software Testing</a></li>
                 </ul>
               </div>
               <div class="mega-col">
@@ -94,7 +84,8 @@
         </ul>
       </nav>
       <div class="header-cta">
-        <a href="#join" class="btn btn-primary">Join Us</a>
+        <a href="#join" class="btn btn-join">Join Us <span class="arrow">↗</span></a>
+        <a href="#hackathon"><button class=" btn-hackathon btn"> Hackathon<span class="arrow">↗</span></button></a>
       </div>
     </div>
   </header>
@@ -146,7 +137,13 @@
         </ul>
       </div>
     </section>
-
+    <section id="hackathon" class="section variant reveal">
+      <div class="container">
+        <h2 class="section-title title-audiowide">Hackathon</h2>
+        <p class="about-text">Join us in the SE26X hackathon, which combines a unique experience and competition to simulate and approximate real-world job market scenarios in problem-solving, enhancing your skills</p>
+        <a href="hackathon.html"><button class="btn-hackathon btn">Sign Up Now <span class="arrow">↗</span></button></a>
+      </div>
+    </section>
     <section class="section meet-us reveal" id="meet-us" aria-labelledby="meet-us-title">
       <div class="container">
         <div class="meet-us-header">
@@ -247,20 +244,6 @@
                 </div>
               </li>
               <li class="card">
-                <img src="meetUs/RahmaMansour.jpg" alt="Front-End Master" class="card-image">
-                <div class="card-body">
-                  <div class="card-name">Rahma Mansour</div>
-                  <div class="card-role">Front-End Master</div>
-                </div>
-              </li>
-              <li class="card">
-                <img src="meetUs/Basant.jpeg" alt="Back-End Director" class="card-image">
-                <div class="card-body">
-                  <div class="card-name">Basant Eid</div>
-                  <div class="card-role">Back-End Director</div>
-                </div>
-              </li>
-              <li class="card">
                 <img src="meetUs/Kharabeta.jpg" alt="Back-End Master" class="card-image">
                 <div class="card-body">
                   <div class="card-name">Mostafa Kharbita</div>
@@ -309,21 +292,6 @@
                 <div class="card-body">
                   <div class="card-name">Baher Sherif</div>
                   <div class="card-role">AI Master</div>
-                </div>
-              </li>
-              <!-- Software Testing -->
-              <li class="card">
-                <img src="meetUs/1.jpg" alt="Software Testing Director" class="card-image">
-                <div class="card-body">
-                  <div class="card-name">Ahmed Shosha</div>
-                  <div class="card-role">Software Testing Director</div>
-                </div>
-              </li>
-              <li class="card">
-                <img src="meetUs/2.jpg" alt="Software Testing Director" class="card-image">
-                <div class="card-body">
-                  <div class="card-name">Ahmed Sherif</div>
-                  <div class="card-role">Software Testing Director</div>
                 </div>
               </li>
               <!-- UI/UX -->
@@ -378,8 +346,8 @@
               <li class="card gallery-card" onclick="openLightbox('gallary/img (3).jpg', 'Gallery image 3')">
                 <img src="gallary/img (3).jpg" alt="Gallery image 3" class="card-image">
               </li>
-              <li class="card gallery-card" onclick="openLightbox('gallary/img (4).jpg', 'Gallery image 4')">
-                <img src="gallary/img (4).jpg" alt="Gallery image 4" class="card-image">
+              <li class="card gallery-card" onclick="openLightbox('gallary/workshop1.jpg', 'Gallery image 4')">
+                <img src="gallary/workshop1.jpg" alt="Gallery image 3" class="card-image">
               </li>
               <li class="card gallery-card show-more" onclick="window.location.href='gallery.html'">
                 <div class="card-image show-more" onclick="window.location.href='gallery.html'">
@@ -464,7 +432,6 @@
               <div class="node">AI</div>
               <div class="node">Flutter</div>
               <div class="node">Web</div>
-              <div class="node">Software Testing</div>
               <div class="node">UI/UX</div>
             </div>
           </div>
@@ -538,7 +505,6 @@
               <li>AI</li>
               <li>Flutter</li>
               <li>Web</li>
-              <li>App Testing</li>
             </ul>
           </div>
           <div class="footer-col">
@@ -563,7 +529,6 @@
               <li>AI</li>
               <li>Flutter</li>
               <li>Web</li>
-              <li>App Testing</li>
               <li>UI/UX</li>
             </ul>
           </div>

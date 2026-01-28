@@ -24,7 +24,10 @@ body {
   width: min(1120px, 92%);
   margin: 0 auto;
 }
-
+a{
+  color: inherit;
+  text-decoration: none;
+}
 /* Header */
 .site-header {
   position: sticky;
@@ -91,10 +94,38 @@ body {
 .mega-col a { color: var(--text); text-decoration: none; opacity: 0.9; }
 .mega-col a:hover { opacity: 1; }
 
-.btn { display: inline-flex; align-items: center; justify-content: center; padding: 10px 16px; border-radius: 999px; text-decoration: none; font-weight: 600; }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 10px 16px; border-radius: 999px; text-decoration: none; font-weight: 600; cursor: pointer; }
 .btn-primary { color: #000; background: var(--accent); }
 .btn-primary:hover { box-shadow: 0 0 18px rgba(255, 255, 255, 0.7); }
+.btn-hackathon{
+  color: black;
+  border: none;
+  padding-block: 13px;
+  transition: all 0.5s ease;
+  background-color:white;
+    &:hover {
+  border:white 1px solid !important;
 
+    background-color: black;
+    color: white;
+  }
+}
+.btn-join{
+  color: white;
+  border: white 1px solid;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+.arrow {
+  font-size: 12px;
+  position: relative;
+  top: -3px;
+  font-weight: lighter;
+  margin-left: 2px;
+}
 /* new wide button */
 .btn-wide {
   color: #000;
