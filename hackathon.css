@@ -25,18 +25,11 @@
     margin-top: 100px;
 }
     .countdown {
+        font-family: audiowide, sans-serif;
       display: flex;
-      gap: 20px;
+      column-gap: 50px;
       justify-content: center;
     }
-
-    .box {
-      background: linear-gradient(145deg, #111, #1a1a1a);
-      padding: 18px 22px;
-      border-radius: 12px;
-      min-width: 90px;
-    }
-
     .number {
       font-size: 36px;
       font-weight: bold;
@@ -47,3 +40,6 @@
       color: #aaa;
       margin-top: 6px;
     }
+#hours, #seconds{
+  color: rgb(141, 141, 141);
+}
