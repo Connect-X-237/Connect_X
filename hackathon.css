@@ -54,6 +54,7 @@
 .timeline{
   font-family:audiowide,sans-serif;
   padding-inline: 50px;
+  
   h2{
     font-size: 48px;
   }
@@ -208,48 +209,79 @@
   }
 }
 /* Responsive: Small phones (500px) */
-@media (max-width: 500px) {
+@media (max-height: 500px) and (orientation: landscape) {
   .timeline {
-    h2{
-      margin-bottom: 50px;
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
     }
-    position: relative;
 
     .progress-container {
-      flex-direction: column;
-      align-items: flex-start;
-      height: 520px;
-      width: auto;
-      margin: 40px 0;
-    }
-
-    .progress-line {
-      top: 0;
-      left: 9px;
-      width: 4px;
-      height:520px;
-      background: linear-gradient(180deg, white, #3D3D3D);
-      transform: translateX(-50%);
-    }
-
-    .step {
-      margin-bottom: 0;
+      margin: 20px auto;
     }
 
     .timeline-items {
-      flex-direction: column;
-      position: absolute;
-      left: 100px;
-      top: 100px;
-      gap: 50px;
+      margin-top: 15px;
+      gap: 5px;
+      
+      .timeline-item {
+        width: 140px !important;
+        height: auto !important;
+        padding: 8px !important;
+        border-radius: 15px;
+        
+        p {
+          margin-block: 3px;
+        }
+        
+        .timeline-item-hour {
+          font-size: 20px !important;
+        }
+        
+        .timeline-item-desc {
+          font-size: 11px !important;
+          line-height: 1.2;
+        }
+      }
     }
-    .first-item{
-      margin-top: -50px;
+
+    .step {
+      width: 14px;
+      height: 14px;
+      border-width: 2px;
     }
-    .timeline-item {
-      width: 200px !important;
-      height: 100px !important;
-      margin-left: -30px;
+
+    .progress-line {
+      height: 3px;
+    }
+  }
+}
+
+/* For very short landscape screens */
+@media (max-height: 400px) and (orientation: landscape) {
+  .timeline {
+    padding-inline: 20px;
+    
+    h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .timeline-items {
+      gap: 3px;
+      
+      .timeline-item {
+        width: 120px !important;
+        padding: 6px !important;
+        
+        .timeline-item-hour {
+          font-size: 18px !important;
+        }
+        
+        .timeline-item-desc {
+          font-size: 10px !important;
+        }
+      }
     }
   }
 }
