@@ -119,3 +119,137 @@
 }
 }
 
+
+/* Responsive: Vertical Timeline */
+
+/* Responsive: Medium screens (1200px) */
+@media (max-width: 1200px) {
+  .timeline {
+    padding-inline: 30px;
+    
+    h2 {
+      font-size: 40px;
+    }
+    
+    .timeline-items {
+      .timeline-item {
+        width: 170px;
+        padding: 12px;
+        
+        .timeline-item-hour {
+          font-size: 30px;
+        }
+        
+        .timeline-item-desc {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive: Small tablets (900px) */
+@media (max-width: 900px) {
+  .timeline {
+    padding-inline: 20px;
+    
+    h2 {
+      font-size: 36px;
+    }
+    
+    .timeline-items {
+      .timeline-item {
+        width: 150px;
+        padding: 10px;
+        
+        .timeline-item-hour {
+          font-size: 26px;
+        }
+        
+        .timeline-item-desc {
+          font-size: 13px;
+        }
+      }
+    }
+    
+    .step {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+/* Responsive: Large phones (700px) */
+@media (max-width: 700px) {
+  .timeline {
+    padding-inline: 15px;
+    
+    h2 {
+      font-size: 32px;
+    }
+    
+    .timeline-items {
+      gap: 10px;
+      
+      .timeline-item {
+        width: 130px;
+        padding: 8px;
+        border-radius: 20px;
+        
+        .timeline-item-hour {
+          font-size: 22px;
+        }
+        
+        .timeline-item-desc {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+/* Responsive: Small phones (500px) */
+@media (max-width: 500px) {
+  .timeline {
+    h2{
+      margin-bottom: 50px;
+    }
+    position: relative;
+
+    .progress-container {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 520px;
+      width: auto;
+      margin: 40px 0;
+    }
+
+    .progress-line {
+      top: 0;
+      left: 9px;
+      width: 4px;
+      height:520px;
+      background: linear-gradient(180deg, white, #3D3D3D);
+      transform: translateX(-50%);
+    }
+
+    .step {
+      margin-bottom: 0;
+    }
+
+    .timeline-items {
+      flex-direction: column;
+      position: absolute;
+      left: 100px;
+      top: 100px;
+      gap: 50px;
+    }
+    .first-item{
+      margin-top: -50px;
+    }
+    .timeline-item {
+      width: 200px !important;
+      height: 100px !important;
+      margin-left: -30px;
+    }
+  }
+}
