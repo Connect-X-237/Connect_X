@@ -54,6 +54,9 @@
 .timeline{
   font-family:audiowide,sans-serif;
   padding-inline: 50px;
+  .parent-timeline{
+    position: relative;
+  }
   h2{
     font-size: 48px;
   }
