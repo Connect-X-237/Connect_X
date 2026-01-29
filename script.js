@@ -102,7 +102,7 @@ if (carousel && viewport && track) {
   const brand = document.querySelector('.brand');
   if (!drawer || !overlay || !brand) return;
 
-  const isMobile = () => window.matchMedia('(max-width: 680px)').matches;
+  const isMobile = () => window.matchMedia('(max-width: 900px)').matches;
 
   const openDrawer = () => {
     if (!isMobile()) return;

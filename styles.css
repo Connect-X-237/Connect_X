@@ -306,7 +306,7 @@ a{
   .main-nav ul { gap: 14px; }
   .card { min-width: 200px; max-width: 200px; }
 }
-@media (max-width: 680px) {
+@media (max-width: 900px) {
   .header-inner { gap: 10px; }
   .brand-name { display: none; }
   .main-nav { display: none; }

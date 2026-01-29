@@ -1,3 +1,4 @@
+
 .text-center{
     text-align: center;
 }
@@ -22,19 +23,26 @@
     font-weight: lighter;
 }
 .launch-and-count{
-    margin-top: 100px;
+    margin-top: 150px;
 }
     .countdown {
         font-family: audiowide, sans-serif;
       display: flex;
-      column-gap: 50px;
+      column-gap: 100px;
       justify-content: center;
     }
     .number {
-      font-size: 36px;
+      font-size: 50px;
       font-weight: bold;
     }
-
+    @media screen and (max-width: 768px) {
+      .countdown {
+        column-gap: 40px;
+      }
+      .number {
+        font-size: 30px;
+      }
+    }
     .label {
       font-size: 12px;
       color: #aaa;
@@ -42,4 +50,116 @@
     }
 #hours, #seconds{
   color: rgb(141, 141, 141);
+}
+.timeline{
+  font-family:audiowide,sans-serif;
+  padding-inline: 50px;
+  h2{
+    font-size: 48px;
+  }
+  .progress-container {
+  position: relative;
+  width: 100%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line */
+.progress-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background:linear-gradient(45deg,white,#3D3D3D);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* cirlce */
+.step {
+  width: 18px;
+  height: 18px;
+  background: #222;
+  border: 3px solid #888;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/*active cirlce*/
+.step.active {
+  background: #fff;
+  border-color: #fff;
+}
+.timeline-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+  .timeline-item{
+    padding: 15px;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg,#2a2a2a,#1a1a1a);
+    width: 200px;
+    border: 1px solid #333333;
+    p{
+      margin-block: 5px;
+    }
+    .timeline-item-hour{
+      font-size: 36px;
+      font-weight: bold;
+    }
+        .timeline-item-desc{
+          font-family:Arial, Helvetica, sans-serif;
+          font-weight: lighter;
+        }
+  }
+}
+}
+
+
+/* Responsive: Vertical Timeline */
+@media (max-width: 900px) {
+  .timeline {
+    position: relative;
+
+    .progress-container {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 900px;
+      width: auto;
+      margin: 40px 0;
+    }
+
+    .progress-line {
+      top: 0;
+      left: 9px;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, white, #3D3D3D);
+      transform: translateX(-50%);
+    }
+
+    .step {
+      margin-bottom: 0;
+    }
+
+    .timeline-items {
+      flex-direction: column;
+
+      margin-top: 130px;
+      position: absolute;
+      left: 100px;
+      top: 0;
+      gap: 125px;
+    }
+    .first-item{
+      margin-top: -50px;
+    }
+    .timeline-item {
+      margin-left: 0;
+    }
+  }
 }
