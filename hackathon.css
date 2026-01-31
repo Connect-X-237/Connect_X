@@ -325,12 +325,14 @@ h2 {
 }
 /* ===============================================apply now============================================ */
 .apply-now{
-  margin-block: 100px;
+  margin-top: 100px;
+  padding-bottom: 50px;
 }
 .apply-content{
   display: flex;
   flex-wrap:wrap ;
   justify-content: space-between;
+  row-gap: 30px;
   h2{
     margin: 0;
     margin-top: -10px;
