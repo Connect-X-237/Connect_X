@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Hackathon Registration</title>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../hackathon.css">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="shortcut icon" href="../logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="form-page">
+        <div class="layer-form">
+        <h1>Form Registration</h1>
+    <form class="myform">
+        <div>
+            <h3>Team Info</h3>
+            <label for="teamName" class="teamName">Team Name</label>
+            <input type="text" id="teamName" name="teamName" required class="my-input" placeholder="eg. Dream Team"/>
+            <p class="myP">Team Members number</p>
+            <div class="radio-group">
+  <input type="radio" name="teamSize" id="m3" value="3" required/>
+        <label for="m3">3</label>
+        <input type="radio" name="teamSize" id="m4" value="4"/>
+        <label for="m4">4</label>
+
+        <input type="radio" name="teamSize" id="m5" value="5"/>
+        <label for="m5">5</label>
+
+        <input type="radio" name="teamSize" id="m6" value="6"/>
+        <label for="m6">6</label>
+        </div>
+        <div class="checkbox">
+        <input type="checkbox" name="agree" id="checkbox" required>
+        <span>I acknowledge that all information provided is correct and I agree to all terms and conditions.</span>
+        </div>
+        <div class="form-footer">
+            <button class="btn-hackathon btn" type="submit">Next</button>
+        </div>
+        </div>
+    </form>
+    </div>  
+    </div>
+</body>
+</html>
