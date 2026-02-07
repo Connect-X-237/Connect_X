@@ -173,3 +173,19 @@
 .myform {
   width: min(500px, 90%);
 }
+.buttons{
+  display: flex;
+  justify-content:space-between ;
+}
+#backBtn{
+  background-color: black;
+  color:white;
+  transition: 500ms;
+  &:hover{
+      background-color: white;
+      color:black;
+  }
+}
+.buttons button{
+  padding-inline: 50px;
+}

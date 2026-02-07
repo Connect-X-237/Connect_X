@@ -18,13 +18,11 @@ form.addEventListener('submit', async (e) => {
   if (teamSize === 0) {
     const size = document.querySelector('input[name="teamSize"]:checked')?.value
     if (!size) return alert('Choose team size')
-
     teamSize = +size
     members = Array(teamSize).fill({})
     showMemberForm(currentMember)
     return
   }
-
   if (currentMember < teamSize) {
     const errorMsg = validateMember(currentMember)
     if (errorMsg) return alert(errorMsg)
@@ -47,9 +45,22 @@ function showMemberForm(i) {
     <input placeholder="Phone" data-i="${i}" data-f="phone" class="member my-input" required type="tel" value="${member.phone || ''}"/>
     <input placeholder="Email" data-i="${i}" data-f="email" class="member my-input" required type="email" value="${member.email || ''}"/>
     <input placeholder="University ID" data-i="${i}" data-f="university_id" class="member my-input" required type="number" value="${member.university_id || ''}"/>
-    <button type="submit" class="btn btn-hackathon">${i === teamSize - 1 ? 'Submit Team' : 'Next'}</button>
+    <div class="buttons">
+      ${i > 0 ? '<button type="button" id="backBtn" class="btn btn-join">Back</button>' : ''}
+      <button type="submit" class="btn btn-hackathon">${i === teamSize - 1 ? 'Submit Team' : 'Next'}</button>
+    </div>
   `
+  const backBtn = document.getElementById('backBtn')
+  if (backBtn) {
+    backBtn.addEventListener('click', () => {
+      if (currentMember > 0) {
+        currentMember--
+        showMemberForm(currentMember)
+      }
+    })
+  }
 }
+
 /* ======================UPDATE MEMBER DATA====================== */
 form.addEventListener('input', (e) => {
   if (!e.target.classList.contains('member')) return
