@@ -77,9 +77,9 @@ form.addEventListener('input', (e) => {
 function validateMember(i) {
   const m = members[i]
   if (!m.full_name || m.full_name.trim() === '') return 'Full name is required'
-  if (!phoneRegex.test(m.phone)) return 'Invalid phone number'
+  if (!phoneRegex.test(m.phone)) return 'Phone mumber must be valid egyptian number'
   if (!emailRegex.test(m.email)) return 'Invalid email'
-  if (!idRegex.test(m.university_id)) return 'Invalid university id'
+  if (!idRegex.test(m.university_id)) return 'ID at least 6 digits'
   return null
 }
 /* ======================SHOW SUBMIT BUTTON====================== */
