@@ -95,7 +95,7 @@ function showSubmitButton() {
     try {
       await createTeam(teamName, members)
       alert('Team saved successfully ✅')
-      location.reload()
+         window.location.replace('/')
     } catch (err) {
       alert(err.message)
     }
