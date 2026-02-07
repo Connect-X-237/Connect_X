@@ -20,6 +20,4 @@ async function listTeams() {
     console.error('Error fetching teams:', err.message)
   }
 }
-
-// نفّذ الدالة
 listTeams()

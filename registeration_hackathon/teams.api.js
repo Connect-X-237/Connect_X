@@ -13,7 +13,6 @@ export async function createTeam(teamName, members) {
     ...m,
     team_id: team.id
   }))
-
   const { error: membersError } = await supabase
     .from('team_members')
     .insert(membersData)
