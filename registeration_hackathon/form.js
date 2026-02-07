@@ -4,19 +4,17 @@ const form = document.getElementById('form')
 const teamNameInput = document.getElementById('teamName')
 
 let members = []
-let currentMember = 0 // لتتبع العضو الحالي
+let currentMember = 0
 let teamSize = 0
 
 /* ======================REGEX====================== */
-const phoneRegex = /^(\+201|01|00201)[0-2,5]{1}[0-9]{8}/g
-const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
+const phoneRegex = /^(\+201|01|00201)[0-2,5]{1}[0-9]{8}/
+const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
 const idRegex = /^\d{6,}$/
 
 /* ======================FORM SUBMIT====================== */
 form.addEventListener('submit', async (e) => {
   e.preventDefault()
-
-  // STEP 1: تحديد حجم الفريق
   if (teamSize === 0) {
     const size = document.querySelector('input[name="teamSize"]:checked')?.value
     if (!size) return alert('Choose team size')
@@ -27,7 +25,6 @@ form.addEventListener('submit', async (e) => {
     return
   }
 
-  // STEP 2: لكل عضو عند الضغط على Next
   if (currentMember < teamSize) {
     const errorMsg = validateMember(currentMember)
     if (errorMsg) return alert(errorMsg)
@@ -36,7 +33,6 @@ form.addEventListener('submit', async (e) => {
     if (currentMember < teamSize) {
       showMemberForm(currentMember)
     } else {
-      // انتهينا من كل الأعضاء، نعرض زر Submit
       showSubmitButton()
     }
   }
@@ -47,7 +43,6 @@ function showMemberForm(i) {
   const member = members[i] || {}
   form.innerHTML = `
     <h3>Member ${i + 1}</h3>
-
     <input placeholder="Full Name" data-i="${i}" data-f="full_name" class="member my-input" required type="text" value="${member.full_name || ''}"/>
     <input placeholder="Phone" data-i="${i}" data-f="phone" class="member my-input" required type="tel" value="${member.phone || ''}"/>
     <input placeholder="Email" data-i="${i}" data-f="email" class="member my-input" required type="email" value="${member.email || ''}"/>
@@ -55,7 +50,6 @@ function showMemberForm(i) {
     <button type="submit" class="btn btn-hackathon">${i === teamSize - 1 ? 'Submit Team' : 'Next'}</button>
   `
 }
-
 /* ======================UPDATE MEMBER DATA====================== */
 form.addEventListener('input', (e) => {
   if (!e.target.classList.contains('member')) return
@@ -68,7 +62,6 @@ form.addEventListener('input', (e) => {
     [field]: e.target.value
   }
 })
-
 /* ======================VALIDATE SINGLE MEMBER====================== */
 function validateMember(i) {
   const m = members[i]
@@ -85,11 +78,9 @@ function showSubmitButton() {
     <input placeholder="Team Name" id="teamName" required type="text" value="${teamNameInput.value || ''}" class="my-input"/>
     <button id="submitTeam" class="btn btn-hackathon">Save Team</button>
   `
-
   document.getElementById('submitTeam').addEventListener('click', async () => {
     const teamName = document.getElementById('teamName').value
     if (!teamName) return alert('Team name is required')
-
     try {
       await createTeam(teamName, members)
       alert('Team saved successfully ✅')
