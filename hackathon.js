@@ -1,4 +1,4 @@
-    const targetDate = new Date(2026, 1, 13, 0, 0, 0).getTime();
+    const targetDate = new Date(2026, 1, 28, 0, 0, 0).getTime();
     function updateCountdown() {
       const now = new Date().getTime();
       const diff = targetDate - now;
